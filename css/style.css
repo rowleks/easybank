@@ -1,5 +1,16 @@
 /* General styles */
 
+:root {
+    --darkblue: hsl(233, 26%, 24%);
+    --limegreen: hsl(136, 65%, 51%);
+    --brightcyan: hsl(192, 70%, 51%);
+    --grayishblue: hsl(233, 8%, 62%);
+    --lgblue: hsl(220, 16%, 96%);
+    --vlgray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%)
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -34,16 +45,25 @@ div.hero {
     background-image: url(../assets/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
     top: -140px;
     z-index: -1;
+    
 
 }
 
-div.hero img {
+.hero-img {
     max-width: 100%;
 }
 
 .hero-info {
     margin-top: -8rem;
+}
+
+div.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1.5rem;
 }
