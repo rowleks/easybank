@@ -1,0 +1,49 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* content styles */
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #FFF;
+}
+
+.header img {
+    cursor: pointer;
+}
+
+div.hero {
+    background-image: url(../assets/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -140px;
+    z-index: -1;
+
+}
+
+div.hero img {
+    max-width: 100%;
+}
+
+.hero-info {
+    margin-top: -8rem;
+}
