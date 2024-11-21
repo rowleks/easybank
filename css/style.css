@@ -7,7 +7,7 @@
     --grayishblue: hsl(233, 8%, 62%);
     --lgblue: hsl(220, 16%, 96%);
     --vlgray: hsl(0, 0%, 98%);
-    --white: hsl(0, 0%, 100%)
+    --white: hsl(0, 0%, 100%);
 }
 
 
@@ -21,7 +21,6 @@ body {
     font-size: 1.125rem;
     font-family: "Public Sans", sans-serif;
 }
-
 
 a {
     text-decoration: none;
@@ -40,6 +39,10 @@ header.header {
 
 .header img {
     cursor: pointer;
+}
+
+section.s1 {
+    padding-bottom: 4rem;
 }
 
 div.hero {
@@ -67,4 +70,28 @@ div.hero-info {
     flex-direction: column;
     gap: .5rem;
     padding-inline: 1.5rem;
+    align-items: center;
+}
+
+h1.heading {
+    color: var(--darkblue);
+    font-weight: 300;
+    text-align: center;
+    font-size: 3ch;
+    line-height: 1.1;
+}
+
+p.small-p {
+    color: var(--grayishblue);
+    font-size: .7rem;
+    line-height: 1.5;
+}
+
+a.invite-link {
+   background-image: linear-gradient(to right, var(--limegreen), var(--brightcyan));
+    padding: .7em 1.5em;
+    border-radius: 5rem;
+    color: var(--white);
+    font-size: .8rem;
+    margin-top: .6rem;
 }
