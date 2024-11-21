@@ -51,7 +51,10 @@ div.hero {
     top: -140px;
     z-index: -1;
     
+}
 
+section.s1 {
+    padding-bottom: 4rem;
 }
 
 .hero-img {
@@ -65,6 +68,29 @@ div.hero {
 div.hero-info {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    align-items: center;
+    gap: .7rem;
     padding-inline: 1.5rem;
+}
+
+h1.heading {
+    color: var(--darkblue);
+    font-size: 3.5ch;
+    font-weight: 300;
+    text-align: center;
+}
+
+div.hero-info p {
+    color: var(--grayishblue);
+    font-size: .8rem;
+}
+
+a.invite-link {
+    background-image: linear-gradient(to right, var(--limegreen), var(--brightcyan));
+    padding: .8em 1.5em;
+    border-radius: 150px;
+    color: var(--white);
+    font-size: .8rem;
+    font-weight: 600;
+    margin-top: .9rem;
 }
