@@ -27,9 +27,14 @@ a {
     color: inherit;
 }
 
-p {
+span {
     color: var(--grayishblue);
     font-size: .7rem;
+}
+
+p {
+    color: var(--grayishblue);
+    font-size: .8rem;
     line-height: 1.5;
     text-align: justify;
 }
@@ -140,5 +145,31 @@ div.easy-ad {
 }
 
 .s2 img {
-    width: 50px;
+    width: 80px;
+}
+
+section.s3 {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1.5rem;
+    gap: 2rem;
+    background-color: var(--vlgray);
+}
+
+.s3 img {
+    max-width: 100%;
+}
+
+div.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+div.description {
+    padding: 2rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
 }
