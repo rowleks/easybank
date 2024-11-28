@@ -41,7 +41,7 @@ p {
 
 h3 {
     color: var(--darkblue);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2rem;
 
 }
@@ -158,12 +158,18 @@ section.s3 {
 
 .s3 img {
     max-width: 100%;
+    flex: 1;
 }
 
 div.articles {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+article.news {
+    display: flex;
+    flex-direction: column;
 }
 
 div.description {
@@ -173,3 +179,25 @@ div.description {
     flex-direction: column;
     gap: .7rem;
 }
+
+div.img-div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    border-radius: 5px 5px 0 0;
+}
+
+div.currency {
+    background-image: url(../assets/image-currency.jpg);
+}
+div.restaurant {
+    background-image: url(../assets/image-restaurant.jpg);
+}
+div.plane {
+    background-image: url(../assets/image-plane.jpg);
+}
+div.confetti {
+    background-image: url(../assets/image-confetti.jpg);
+}
+
