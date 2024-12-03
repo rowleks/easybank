@@ -15,7 +15,7 @@
   
     <header class="header">
         <a href="/"><img src="./assets/logo.svg" alt="easybank logo"></a>
-        <img id="ham" src="./assets/icon-hamburger.svg" alt="">
+        <img src="./assets/icon-hamburger.svg" alt="" onclick="toggleNav()">
 
     </header>
 
@@ -24,7 +24,7 @@
            
 
             <div class="hero">
-                <div class="nav-div">
+                <div class="nav-div toggle" id="toggle-div">
                     <nav class="nav-items">
                         <a href="#">Home</a>
                         <a href="#">About</a>
@@ -164,9 +164,11 @@
     </footer>
 
     <script>
+        const nav = document.getElementById('toggle-div')
 
-
-
+        function toggleNav() {
+            nav.classList.toggle('toggle')
+        }
 
     </script>
     

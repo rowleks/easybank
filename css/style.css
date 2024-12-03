@@ -56,6 +56,9 @@ header.header {
     align-items: center;
     padding: 1.2rem;
     background-color: #FFF;
+    position: relative;
+    z-index: 99;
+
 }
 
 
@@ -76,7 +79,7 @@ div.hero {
     background-size: cover;
     position: relative;
     top: -140px;
-    z-index: -1;
+    z-index: 1;
     
 }
 /* Div for javascript */
@@ -98,6 +101,15 @@ nav.nav-items {
     color: var(--darkblue);
     width: 100%;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.toggle {
+    display: none;
+}
+
+.nav-items a {
+    cursor: pointer;
 }
 
 
