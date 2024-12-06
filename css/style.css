@@ -292,7 +292,7 @@ nav.d-nav, a.d-invite-link {
         color: var(--grayishblue)
     }
 
-    img.ham {
+    img#ham {
         display: none;
     }
     
