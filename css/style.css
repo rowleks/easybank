@@ -80,6 +80,7 @@ div.hero {
     position: relative;
     top: -140px;
     z-index: 1;
+    max-width: 100%;
     
 }
 /* Div for javascript */
@@ -295,5 +296,42 @@ nav.d-nav, a.d-invite-link {
     img#ham {
         display: none;
     }
+
+    section.s1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        padding: 0 0 0 1rem;
+    }
+
+    div.hero {
+        background-image: url('../assets/bg-intro-desktop.svg');
+        background-position: top left;
+       
+    }
+
+    img.hero-img {
+        position: relative;
+        right: -20%;
+        top: 50px
+    }
+
+    h1.d-heading {
+        font-size: 4.5ch;
+        text-align: left;
+        margin-top: -5rem;
+    }
+
+    div.hero-info {
+        align-items: flex-start;
+        width: 600px;
+    }
+
+    section.s2 {
+        margin-top: -12rem;
+    }
+
     
   }
