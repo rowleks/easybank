@@ -226,16 +226,16 @@ div.img-div {
 }
 
 div.currency {
-    background-image: url(../assets/image-currency.jpg);
+    background-image: url('../assets/image-currency.jpg');
 }
 div.restaurant {
-    background-image: url(../assets/image-restaurant.jpg);
+    background-image: url('../assets/image-restaurant.jpg');
 }
 div.plane {
-    background-image: url(../assets/image-plane.jpg);
+    background-image: url('../assets/image-plane.jpg');
 }
 div.confetti {
-    background-image: url(../assets/image-confetti.jpg);
+    background-image: url('../assets/image-confetti.jpg');
 }
 
 /* Footer */
@@ -279,6 +279,31 @@ div.footer-links {
 nav.d-nav, a.d-invite-link {
     display: none;
 }
+@media (min-width: 768px)
+{
+    section.s2 {
+        align-items: flex-start;
+        padding-inline: 3rem;
+    }
+
+    div.top-s2 {
+        align-items: flex-start;
+        width: 500px;
+    }
+    
+    div.bottom-s2 {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    div.easy-ad {
+        align-items: flex-start;
+        gap: 1.5rem;
+        width: 300px
+    }
+}
 
 @media (min-width: 999px) {
     nav.d-nav, a.d-invite-link {
@@ -301,8 +326,10 @@ nav.d-nav, a.d-invite-link {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
+        justify-content: space-between;
         flex-wrap: nowrap;
         overflow: hidden;
+        width: 100%;
         padding: 0 0 0 1rem;
     }
 
@@ -319,7 +346,7 @@ nav.d-nav, a.d-invite-link {
     }
 
     h1.d-heading {
-        font-size: 4.5ch;
+        font-size: 5ch;
         text-align: left;
         margin-top: -5rem;
     }
@@ -327,10 +354,31 @@ nav.d-nav, a.d-invite-link {
     div.hero-info {
         align-items: flex-start;
         width: 600px;
+        margin-top: -15rem;
     }
 
     section.s2 {
-        margin-top: -12rem;
+        margin-top: -15rem;
+        align-items: flex-start;
+        padding-inline: 6rem;
+    }
+
+    div.top-s2 {
+        align-items: flex-start;
+        width: 500px;
+    }
+    
+    div.bottom-s2 {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    div.easy-ad {
+        align-items: flex-start;
+        gap: 1.5rem;
+        width: 300px
     }
 
     
