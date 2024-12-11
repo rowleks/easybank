@@ -27,6 +27,9 @@ a {
     color: inherit;
 }
 
+
+
+
 span {
     color: var(--grayishblue);
     font-size: .7rem;
@@ -45,6 +48,7 @@ h3 {
     font-size: 1.2rem;
 
 }
+
 
 /* content styles */
 
@@ -70,6 +74,7 @@ header.header {
 
 section.s1 {
     padding-bottom: 4rem;
+    background-color: var(--vlgray);
 }
 
 div.hero {
@@ -103,6 +108,28 @@ nav.nav-items {
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* nav a:hover, nav a:active {
+    text-decoration: underline;
+    text-underline-offset: 1.6rem;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--limegreen);
+    
+} */
+
+nav a {
+    position: relative;
+}
+
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(to right, var(--limegreen), var(--brightcyan))
 }
 
 .toggle {
@@ -142,21 +169,23 @@ h1.heading {
 
 a.invite-link {
    background-image: linear-gradient(to right, var(--limegreen), var(--brightcyan));
-    padding: .7em 1.5em;
+    padding: .8em 1.6em;
     border-radius: 5rem;
     color: var(--white);
     font-size: .8rem;
     margin-top: .6rem;
 }
 
+
+
 /* section two */
 
 section.s2 {
     display: flex;
     flex-direction: column;
-    padding: 4rem 1.5rem;
-    background-color: var(--vlgray);
-    gap: 3rem;
+    padding: 6rem 1.5rem;
+    background-color: var(--lgblue);
+    gap: 4rem;
     align-items: center;
 }
 
@@ -351,6 +380,10 @@ nav.d-nav, a.d-invite-link {
     header.header {
         padding-inline: 6rem;
     }
+
+    nav a:hover::after {
+        bottom: -120%;
+    }
     nav.d-nav, a.d-invite-link {
         display: flex;
         margin: 0;
@@ -468,4 +501,36 @@ nav.d-nav, a.d-invite-link {
         align-items: flex-start;
     } 
   }
+
+
+/* End of responsive design */
+
+.description h3 {
+   cursor: pointer;
+}
+
+.description h3:hover {
+   color: var(--limegreen);
+}
+
+a.invite-link:hover {
+    opacity: .7;
+}
+
+.social-links img:hover {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(66%) saturate(502%) hue-rotate(105deg) brightness(100%) contrast(81%);
+}
+
+.footer-links a:hover {
+    color: var(--limegreen);
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
