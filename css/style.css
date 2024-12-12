@@ -528,7 +528,7 @@ a.invite-link:hover {
 .attribution { 
     font-size: 14px; 
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
  }
 
 .attribution a { 
