@@ -279,10 +279,6 @@ footer.footer {
     padding: 3rem 6rem;
 }
 
-img.logo {
-    filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(147deg) brightness(105%) contrast(105%);
-    max-width: 140px
-}
 
 div.social-links {
     display: flex;
